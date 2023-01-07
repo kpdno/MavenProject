@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-01-06T22:30:20 GMT-05:00" name="Default suite" finished-at="2023-01-06T22:30:38 GMT-05:00" duration-ms="17679">
+    <groups>
+    </groups>
+    <test started-at="2023-01-06T22:30:20 GMT-05:00" name="Default test" finished-at="2023-01-06T22:30:38 GMT-05:00" duration-ms="17679">
+      <class name="testcases.BankLogin">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.BankLogin@595b007d]" started-at="2023-01-06T22:30:20 GMT-05:00" name="setup" finished-at="2023-01-06T22:30:24 GMT-05:00" duration-ms="3740" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="applyForLoan()[pri:0, instance:testcases.BankLogin@595b007d]" started-at="2023-01-06T22:30:24 GMT-05:00" name="applyForLoan" finished-at="2023-01-06T22:30:27 GMT-05:00" duration-ms="2811" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- applyForLoan -->
+        <test-method is-config="true" signature="close()[pri:0, instance:testcases.BankLogin@595b007d]" started-at="2023-01-06T22:30:27 GMT-05:00" name="close" finished-at="2023-01-06T22:30:27 GMT-05:00" duration-ms="268" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.BankLogin@595b007d]" started-at="2023-01-06T22:30:27 GMT-05:00" name="setup" finished-at="2023-01-06T22:30:30 GMT-05:00" duration-ms="2827" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="applyForLoanPageFactory()[pri:0, instance:testcases.BankLogin@595b007d]" started-at="2023-01-06T22:30:30 GMT-05:00" name="applyForLoanPageFactory" finished-at="2023-01-06T22:30:33 GMT-05:00" duration-ms="2623" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- applyForLoanPageFactory -->
+        <test-method is-config="true" signature="close()[pri:0, instance:testcases.BankLogin@595b007d]" started-at="2023-01-06T22:30:33 GMT-05:00" name="close" finished-at="2023-01-06T22:30:33 GMT-05:00" duration-ms="148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.BankLogin@595b007d]" started-at="2023-01-06T22:30:33 GMT-05:00" name="setup" finished-at="2023-01-06T22:30:36 GMT-05:00" duration-ms="2813" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="login()[pri:0, instance:testcases.BankLogin@595b007d]" started-at="2023-01-06T22:30:36 GMT-05:00" name="login" finished-at="2023-01-06T22:30:38 GMT-05:00" duration-ms="2154" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="close()[pri:0, instance:testcases.BankLogin@595b007d]" started-at="2023-01-06T22:30:38 GMT-05:00" name="close" finished-at="2023-01-06T22:30:38 GMT-05:00" duration-ms="196" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- testcases.BankLogin -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

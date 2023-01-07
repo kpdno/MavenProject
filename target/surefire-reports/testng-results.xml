@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-12-29T23:00:46 GMT-05:00" name="Suite" finished-at="2022-12-29T23:01:02 GMT-05:00" duration-ms="16106">
+    <groups>
+    </groups>
+    <test started-at="2022-12-29T23:00:46 GMT-05:00" name="Test" finished-at="2022-12-29T23:01:02 GMT-05:00" duration-ms="16106">
+      <class name="lesson23.TestA">
+        <test-method signature="testA1()[pri:0, instance:lesson23.TestA@7f552bd3]" started-at="2022-12-29T23:00:46 GMT-05:00" name="testA1" finished-at="2022-12-29T23:00:46 GMT-05:00" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testA1 -->
+        <test-method signature="testA2()[pri:0, instance:lesson23.TestA@7f552bd3]" started-at="2022-12-29T23:00:46 GMT-05:00" name="testA2" finished-at="2022-12-29T23:00:46 GMT-05:00" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testA2 -->
+      </class> <!-- lesson23.TestA -->
+      <class name="lesson23.TestB">
+        <test-method signature="testB1()[pri:0, instance:lesson23.TestB@36c88a32]" started-at="2022-12-29T23:00:46 GMT-05:00" name="testB1" finished-at="2022-12-29T23:00:46 GMT-05:00" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testB1 -->
+        <test-method signature="testB2()[pri:0, instance:lesson23.TestB@36c88a32]" started-at="2022-12-29T23:00:46 GMT-05:00" name="testB2" finished-at="2022-12-29T23:00:46 GMT-05:00" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testB2 -->
+      </class> <!-- lesson23.TestB -->
+      <class name="testcases.BankLogin">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.BankLogin@6ef888f6]" started-at="2022-12-29T23:00:46 GMT-05:00" name="setup" finished-at="2022-12-29T23:00:49 GMT-05:00" duration-ms="3431" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="applyForLoan()[pri:0, instance:testcases.BankLogin@6ef888f6]" started-at="2022-12-29T23:00:49 GMT-05:00" name="applyForLoan" finished-at="2022-12-29T23:00:52 GMT-05:00" duration-ms="3289" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- applyForLoan -->
+        <test-method is-config="true" signature="close()[pri:0, instance:testcases.BankLogin@6ef888f6]" started-at="2022-12-29T23:00:52 GMT-05:00" name="close" finished-at="2022-12-29T23:00:53 GMT-05:00" duration-ms="188" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.BankLogin@6ef888f6]" started-at="2022-12-29T23:00:53 GMT-05:00" name="setup" finished-at="2022-12-29T23:00:54 GMT-05:00" duration-ms="1489" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="applyForLoanPageFactory()[pri:0, instance:testcases.BankLogin@6ef888f6]" started-at="2022-12-29T23:00:54 GMT-05:00" name="applyForLoanPageFactory" finished-at="2022-12-29T23:00:57 GMT-05:00" duration-ms="3421" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- applyForLoanPageFactory -->
+        <test-method is-config="true" signature="close()[pri:0, instance:testcases.BankLogin@6ef888f6]" started-at="2022-12-29T23:00:57 GMT-05:00" name="close" finished-at="2022-12-29T23:00:58 GMT-05:00" duration-ms="131" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.BankLogin@6ef888f6]" started-at="2022-12-29T23:00:58 GMT-05:00" name="setup" finished-at="2022-12-29T23:00:59 GMT-05:00" duration-ms="1418" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="login()[pri:0, instance:testcases.BankLogin@6ef888f6]" started-at="2022-12-29T23:00:59 GMT-05:00" name="login" finished-at="2022-12-29T23:01:01 GMT-05:00" duration-ms="2438" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="close()[pri:0, instance:testcases.BankLogin@6ef888f6]" started-at="2022-12-29T23:01:01 GMT-05:00" name="close" finished-at="2022-12-29T23:01:02 GMT-05:00" duration-ms="182" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- testcases.BankLogin -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
