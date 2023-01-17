@@ -1,49 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-01-06T22:30:20 GMT-05:00" name="Default suite" finished-at="2023-01-06T22:30:38 GMT-05:00" duration-ms="17679">
+  <suite started-at="2023-01-10T23:19:58 GMT-05:00" name="Default suite" finished-at="2023-01-10T23:19:58 GMT-05:00" duration-ms="103">
     <groups>
     </groups>
-    <test started-at="2023-01-06T22:30:20 GMT-05:00" name="Default test" finished-at="2023-01-06T22:30:38 GMT-05:00" duration-ms="17679">
-      <class name="testcases.BankLogin">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.BankLogin@595b007d]" started-at="2023-01-06T22:30:20 GMT-05:00" name="setup" finished-at="2023-01-06T22:30:24 GMT-05:00" duration-ms="3740" status="PASS">
+    <test started-at="2023-01-10T23:19:58 GMT-05:00" name="Default test" finished-at="2023-01-10T23:19:58 GMT-05:00" duration-ms="103">
+      <class name="testcases.TestCaseUsingExcel">
+        <test-method signature="test1()[pri:0, instance:testcases.TestCaseUsingExcel@3febb011]" started-at="2023-01-10T23:19:58 GMT-05:00" name="test1" data-provider="MyData" finished-at="2023-01-10T23:19:58 GMT-05:00" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Data Provider public java.lang.Object[][] testcases.TestCaseUsingExcel.MyData() returned a null value]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Data Provider public java.lang.Object[][] testcases.TestCaseUsingExcel.MyData() returned a null value
+at org.testng.internal.invokers.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:159)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:803)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:728)
+at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:924)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="applyForLoan()[pri:0, instance:testcases.BankLogin@595b007d]" started-at="2023-01-06T22:30:24 GMT-05:00" name="applyForLoan" finished-at="2023-01-06T22:30:27 GMT-05:00" duration-ms="2811" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- applyForLoan -->
-        <test-method is-config="true" signature="close()[pri:0, instance:testcases.BankLogin@595b007d]" started-at="2023-01-06T22:30:27 GMT-05:00" name="close" finished-at="2023-01-06T22:30:27 GMT-05:00" duration-ms="268" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.BankLogin@595b007d]" started-at="2023-01-06T22:30:27 GMT-05:00" name="setup" finished-at="2023-01-06T22:30:30 GMT-05:00" duration-ms="2827" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="applyForLoanPageFactory()[pri:0, instance:testcases.BankLogin@595b007d]" started-at="2023-01-06T22:30:30 GMT-05:00" name="applyForLoanPageFactory" finished-at="2023-01-06T22:30:33 GMT-05:00" duration-ms="2623" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- applyForLoanPageFactory -->
-        <test-method is-config="true" signature="close()[pri:0, instance:testcases.BankLogin@595b007d]" started-at="2023-01-06T22:30:33 GMT-05:00" name="close" finished-at="2023-01-06T22:30:33 GMT-05:00" duration-ms="148" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.BankLogin@595b007d]" started-at="2023-01-06T22:30:33 GMT-05:00" name="setup" finished-at="2023-01-06T22:30:36 GMT-05:00" duration-ms="2813" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="login()[pri:0, instance:testcases.BankLogin@595b007d]" started-at="2023-01-06T22:30:36 GMT-05:00" name="login" finished-at="2023-01-06T22:30:38 GMT-05:00" duration-ms="2154" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method is-config="true" signature="close()[pri:0, instance:testcases.BankLogin@595b007d]" started-at="2023-01-06T22:30:38 GMT-05:00" name="close" finished-at="2023-01-06T22:30:38 GMT-05:00" duration-ms="196" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-      </class> <!-- testcases.BankLogin -->
+        </test-method> <!-- test1 -->
+      </class> <!-- testcases.TestCaseUsingExcel -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
