@@ -13,14 +13,13 @@ import org.testng.annotations.BeforeMethod;
 
 public class ExplicitWait {
 
-	String url = "file:///C:/Users/Jurabek/Desktop/waits.html";
+	String url = "https://demo.applitools.com/";
 	WebDriver driver;
 
 	@BeforeMethod
 	public void setup() {
-		System.setProperty("webdriver.chrome.driver", "C:\\webdrivers\\chromedriver2.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\webdrivers\\chromedriver.exe");
 		driver = new ChromeDriver();
-		driver.manage().window().setPosition(new Point(-1800, 100));
 		driver.manage().window().maximize();
 
 		// Implicit wait waits for certain time before throwing "No Such Element
@@ -29,7 +28,7 @@ public class ExplicitWait {
 //		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 	}
 
-	// @Test
+	// @Given
 	public void alertTest() {
 
 		driver.get(url);
