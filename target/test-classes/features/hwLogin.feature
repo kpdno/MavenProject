@@ -13,7 +13,7 @@ Feature: Login to BandLab
     And Login Page is open
     When User inserts valid credentials
     And clicks login
-    Then home page should open
+    Then Home page should open
     Then User opens New Project
     And New Project should open
     Then User click play button
