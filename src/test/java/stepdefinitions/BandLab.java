@@ -42,18 +42,21 @@ public class BandLab {
 		
 		System.setProperty("webdriver.chrome.driver", "C:\\webdrivers\\chromedriver.exe");
 		
-//		String browser = prop.getProperty("browser");
-//		if (browser.equals("chrome")) {
-//			System.setProperty("webdriver.chrome.driver", "C:\\webdrivers\\chromedriver.exe");
+		String browser = prop.getProperty("browser");
+		if (browser.equals("chrome")) {
+			System.setProperty("webdriver.chrome.driver", "C:\\webdrivers\\chromedriver.exe");
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("--disable-notifications");
+			driver = new ChromeDriver(options);
 //			driver = new ChromeDriver();
-//		} else if (browser.equals("firefox")) {
-//			System.setProperty("webdriver.gecko.driver", "C:\\webdrivers\\geckodriver.exe");
-//			driver = new FirefoxDriver();
-//		} else if (browser.equals("edge")) {
-//			System.setProperty("webdriver.edge.driver", "C:\\webdrivers\\msedgedriver.exe");
-//			driver = new EdgeDriver();
-//		}
-//
+		} else if (browser.equals("firefox")) {
+			System.setProperty("webdriver.gecko.driver", "C:\\webdrivers\\geckodriver.exe");
+			driver = new FirefoxDriver();
+		} else if (browser.equals("edge")) {
+			System.setProperty("webdriver.edge.driver", "C:\\webdrivers\\msedgedriver.exe");
+			driver = new EdgeDriver();
+		}
+
 	
 		
 		LoginPage = new LoginPage(driver);
@@ -64,9 +67,9 @@ public class BandLab {
 
 	@And("^Disable notifications$")
 	public void disable_notifications() {
-		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--disable-notifications");
-		driver = new ChromeDriver(options);
+//		ChromeOptions options = new ChromeOptions();
+//		options.addArguments("--disable-notifications");
+//		driver = new ChromeDriver(options);
 	}
 
 	@And("^Maximize the browser$")
@@ -86,7 +89,7 @@ public class BandLab {
 	}
 
 	@Given("^BandLab page is open$")
-	public void bandlab_page_is_open() {
+	public void bandlab_page_is_open() throws InterruptedException {
 		String HomeBandLab = OpenPages.getBandLabHomePage();
 		Assert.assertEquals(HomeBandLab, "Зарегистрироваться", "BandLab Page should open");
 		

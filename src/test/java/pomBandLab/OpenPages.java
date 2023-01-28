@@ -20,7 +20,8 @@ public class OpenPages {
 	}
 
 	// Actions
-	public String getBandLabHomePage() {
+	public String getBandLabHomePage() throws InterruptedException {
+		Thread.sleep(2000);
 		return driver.findElement(HomeBandLabPage).getText();
 	}
 
