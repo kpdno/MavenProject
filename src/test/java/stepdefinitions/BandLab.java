@@ -31,24 +31,20 @@ public class BandLab {
 	public void initilize_diver() {
 
 		prop = new Properties();
-		
-		
+
 		try {
 			FileInputStream fis = new FileInputStream("src\\test\\java\\resources\\BandLabApp.properties");
 			prop.load(fis);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		
-		System.setProperty("webdriver.chrome.driver", "C:\\webdrivers\\chromedriver.exe");
-		
+
 		String browser = prop.getProperty("browser");
 		if (browser.equals("chrome")) {
 			System.setProperty("webdriver.chrome.driver", "C:\\webdrivers\\chromedriver.exe");
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("--disable-notifications");
 			driver = new ChromeDriver(options);
-//			driver = new ChromeDriver();
 		} else if (browser.equals("firefox")) {
 			System.setProperty("webdriver.gecko.driver", "C:\\webdrivers\\geckodriver.exe");
 			driver = new FirefoxDriver();
@@ -57,19 +53,10 @@ public class BandLab {
 			driver = new EdgeDriver();
 		}
 
-	
-		
 		LoginPage = new LoginPage(driver);
 		ClickPages = new ClickPages(driver);
 		OpenPages = new OpenPages(driver);
 
-	}
-
-	@And("^Disable notifications$")
-	public void disable_notifications() {
-//		ChromeOptions options = new ChromeOptions();
-//		options.addArguments("--disable-notifications");
-//		driver = new ChromeDriver(options);
 	}
 
 	@And("^Maximize the browser$")
@@ -92,7 +79,6 @@ public class BandLab {
 	public void bandlab_page_is_open() throws InterruptedException {
 		String HomeBandLab = OpenPages.getBandLabHomePage();
 		Assert.assertEquals(HomeBandLab, "Зарегистрироваться", "BandLab Page should open");
-		
 	}
 
 	@When("^User clicks the login button$")
@@ -142,6 +128,57 @@ public class BandLab {
 	@And("^The music should play$")
 	public void the_music_should_play() {
 		WebElement audio = OpenPages.getMusicPlay();
+		Assert.assertNotEquals(audio.getAttribute("currentTime"), "0");
+	}
+
+	@Given("^Check BandLab page is open$")
+	public void check_bandlab_page_is_open() throws InterruptedException {
+		Thread.sleep(5000);
+		String BandLabPageOpen = driver
+				.findElement(By.cssSelector("a[analytics-label = 'Sign Up'][ui-sref = 'signUp']:nth-of-type(1)"))
+				.getText();
+		Assert.assertEquals(BandLabPageOpen, "Зарегистрироваться", "BandLab Page should open");
+	}
+
+	@When("^User clicks login button$")
+	public void user_clicks_login_button() {
+		driver.findElement(By.cssSelector("a[analytics-label = 'Log In'][ui-sref = 'login']")).click();
+	}
+
+	@And("^LogIn Page is opens$")
+	public void login_page_is_opens() {
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+		String loginPageTitle = driver.findElement(By.cssSelector("label[for= 'username']")).getText();
+		Assert.assertEquals(loginPageTitle, "Имя пользователя или email", "Login page is open");
+	}
+
+	@When("^User inserts valid (.+) and (.+)$")
+	public void user_inserts_valid_and(String username, String password) {
+		driver.findElement(By.id("username")).sendKeys(username);
+		driver.findElement(By.id("password")).sendKeys(password);
+	}
+
+	@And("^The User Clicks login$")
+	public void the_user_clicks_login() {
+		driver.findElement(By.cssSelector(".button-dark.button-height-40.button-rounded.button-padding-fill")).click();
+	}
+
+	@Then("^The User Opens Library$")
+	public void the_user_opens_library() throws InterruptedException {
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//span[text()='Библиотека'][1]")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//a[text()=' New Project '][1]")).click();
+	}
+
+	@Then("^The User click play button$")
+	public void the_user_click_play_button() {
+		driver.findElement(By.cssSelector(".player-button-64")).click();
+	}
+
+	@And("^Music should play$")
+	public void music_should_play() {
+		WebElement audio = driver.findElement(By.tagName("span"));
 		Assert.assertNotEquals(audio.getAttribute("currentTime"), "0");
 	}
 
